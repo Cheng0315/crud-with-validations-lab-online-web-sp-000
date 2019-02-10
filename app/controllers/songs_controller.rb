@@ -1,7 +1,10 @@
 class SongsController < ApplicationController
 
   def index
+<<<<<<< HEAD
     @songs = Song.all
+=======
+>>>>>>> 08f2c7312a000bf018652026a26901460e6897de
   end
 
   def new
@@ -35,9 +38,13 @@ class SongsController < ApplicationController
     end
   end
 
+<<<<<<< HEAD
   def destroy
     Song.find(params[:id]).destroy
     redirect_to songs_path
+=======
+  def delete
+>>>>>>> 08f2c7312a000bf018652026a26901460e6897de
   end
 
   private
